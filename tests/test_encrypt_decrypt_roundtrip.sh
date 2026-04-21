@@ -18,13 +18,13 @@ fi
 CIPHER_OUTPUT=$(printf "1\n%s\n%s\n" "$PLAINTEXT" "$KEY" | ../des 2>&1)
 CIPHER=$(echo "$CIPHER_OUTPUT" | grep -oE "[01]{64,}" | tail -n 1)
 
-echo "Encrypted: "
+echo "Encrypted: $CIPHER"
 
 # Decrypt
 PLAIN_OUTPUT=$(printf "2\n%s\n%s\n" "$CIPHER" "$KEY" | ../des 2>&1)
 DECRYPTED=$(echo "$PLAIN_OUTPUT" | grep -oE "[01]{64,}" | tail -n 1)
 
-echo "Decrypted: "
+echo "Decrypted: $DECRYPTED"
 
 if [[ "$DECRYPTED" != "$PLAINTEXT" ]]; then
   echo "FAIL: Round-trip test failed"
