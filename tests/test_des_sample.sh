@@ -28,6 +28,6 @@ if [[ "$ACTUAL" != "$EXPECTED" ]]; then
 fi
 
 echo "PASS: DES sample encryption works correctly"
-echo "Input: $PLAINTEXT"
-echo "Key: $KEY"
-echo "Output: $EXPECTED"
+echo "Input: "
+echo "Key: "
+echo "Output: "

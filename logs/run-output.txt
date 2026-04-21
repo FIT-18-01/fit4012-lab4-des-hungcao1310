@@ -1,4 +1,4 @@
-﻿Chß╗ìn mode:
+﻿﻿Chß╗ìn mode:
 1 = DES encrypt
 2 = DES decrypt
 3 = TripleDES encrypt

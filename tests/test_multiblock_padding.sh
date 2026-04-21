@@ -26,5 +26,5 @@ if [[ "$ACTUAL" != "$EXPECTED" ]]; then
 fi
 
 echo "PASS: Multi-block encryption with zero padding works correctly"
-echo "Input length: 74 bits"
-echo "Output length: 128 bits"
+echo "Input length:  bits"
+echo "Output length:  bits"
